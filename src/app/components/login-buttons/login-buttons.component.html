@@ -1,0 +1,84 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <div class="heading">
+          <p class="social_Login">Social Login</p>
+          <p class="platform">Platform</p>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="box">
+          <span class="borderline"></span>
+
+          <form action="">
+            <h2 style="font-weight: 700; margin: 35px 0" class="mt-4">
+              Sign In With
+            </h2>
+            <div class="form-group button-div mt-3">
+              <div
+                id="g_id_onload"
+                data-client_id="745628972767-3mlbmn5lcps4d1joe97ftckonu6gtio8.apps.googleusercontent.com"
+                data-context="signin"
+                data-ux_mode="popup"
+                data-login_uri="https://social-login-ashen.vercel.app"
+                data-redirect-uri="https://social-login-ashen.vercel.app/user-details"
+                data-auto_prompt="false"
+              ></div>
+
+              <div
+                class="g_id_signin"
+                data-type="standard"
+                data-shape="rectangular"
+                data-theme="outline"
+                data-text="signin_with"
+                data-size="large"
+                data-logo_alignment="left"
+                data-width="400px"
+              ></div>
+              <!-- <div
+                  id="g_id_onload"
+                  data-client_id="745628972767-3mlbmn5lcps4d1joe97ftckonu6gtio8.apps.googleusercontent.com"
+                  data-context="signin"
+                  data-ux_mode="popup"
+                  data-width="400.043"
+                  data-login_uri="https://social-login-ashen.vercel.app/user-details"
+                  data-callback="https://social-login-ashen.vercel.app/user-details"
+                  data-auto_select="true"
+                  data-itp_support="true"
+                  data-auto_prompt="false"
+                  data-auto_prompt="false"
+                ></div>
+          
+                <div
+                  class="g_id_signin"
+                  data-type="standard"
+                  data-shape="rectangular"
+                  data-theme="outline"
+                  data-text="signin_with"
+                  data-size="large"
+                  data-logo_alignment="left"
+                ></div> -->
+            </div>
+
+            <div class="form-group button-div">
+              <button
+                type="button"
+                (click)="loginWithFacebook()"
+                class="btn btn-primary w-100"
+              >
+                Signin with Facebook
+              </button>
+            </div>
+
+            <div class="form-group button-div auth0">
+              <button type="button" (click)="authO()" class="btn auth0 w-100">
+                Signin with AuthO
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
